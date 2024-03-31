@@ -1,0 +1,5 @@
+.product-border {
+    box-shadow: 0px 0px 5px 4px rgba(227, 232, 230, 0.87);
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(227, 232, 230, 0.87);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(227, 232, 230, 0.87);
+}
