@@ -121,6 +121,24 @@ export const UserContext = ({ children }) => {
         }
     }
 
+    const cancelUpdate = () => {
+        setFirstName('')
+        setLastName('');
+        setEmail('');
+        setPassword('');
+        setAddress('');
+        setCity('');
+        setState('');
+        setZipcode('');
+        setCountry('');
+        setFatherName('');
+        setGender('');
+        setImageUrl('');
+        setCompanyName('');
+        setJobTitle('');
+        setJobDescription('');
+    }
+
     // Toastify Alert
     const notifyToast = (message) => {
         toast.success(`${message}`, {
@@ -134,7 +152,7 @@ export const UserContext = ({ children }) => {
 
     return (
         <ContextData.Provider value={{
-            userInfo, firstName, lastName, email, password, address, city, state, zipcode, country, fatherName, gender, imageUrl, companyName, jobTitle, jobDescription, setFirstName, setLastName, setEmail, setPassword, setAddress, setCity, setState, setZipcode, setCountry, setFatherName, setGender, setImageUrl, setCompanyName, setJobTitle, setJobDescription, addUser, deleteUser, updateUser
+            userInfo, firstName, lastName, email, password, address, city, state, zipcode, country, fatherName, gender, imageUrl, companyName, jobTitle, jobDescription, setFirstName, setLastName, setEmail, setPassword, setAddress, setCity, setState, setZipcode, setCountry, setFatherName, setGender, setImageUrl, setCompanyName, setJobTitle, setJobDescription, addUser, deleteUser, updateUser, cancelUpdate
         }}>
             {children}
         </ContextData.Provider>

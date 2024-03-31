@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 
 const EditUser = () => {
 
-    const { firstName, lastName, email, password, address, city, state, zipcode, country, fatherName, gender, imageUrl, companyName, jobTitle, jobDescription, setFirstName, setLastName, setEmail, setPassword, setAddress, setCity, setState, setZipcode, setCountry, setFatherName, setGender, setImageUrl, setCompanyName, setJobTitle, setJobDescription, updateUser } = useContext(ContextData);
+    const { firstName, lastName, email, password, address, city, state, zipcode, country, fatherName, gender, imageUrl, companyName, jobTitle, jobDescription, setFirstName, setLastName, setEmail, setPassword, setAddress, setCity, setState, setZipcode, setCountry, setFatherName, setGender, setImageUrl, setCompanyName, setJobTitle, setJobDescription, updateUser, cancelUpdate } = useContext(ContextData);
 
     const urlId = useParams();
 
@@ -76,7 +76,7 @@ const EditUser = () => {
 
                     <div class="col-12 text-center pb-4 pt-4">
                         <Link to={"/"}><button type="submit" class="btn btn-primary" onClick={() => updateUser(urlId.id)}>Update User</button></Link>
-                        <Link to={"/"}><button type="submit" class="btn btn-secondary ms-5" >Cancel</button></Link>
+                        <Link to={"/"}><button type="submit" class="btn btn-secondary ms-5" onClick={()=>cancelUpdate()}>Cancel</button></Link>
                     </div>
                 </form>
             </div>
