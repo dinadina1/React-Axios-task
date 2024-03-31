@@ -8,6 +8,9 @@
  <p>It's fully Responsive.</p>
   <p>It works with React Router-Dom.</p>
   <br>
+  <h4>Mock API URL </h4>
+  https://6608f4b1a2a5dd477b14e962.mockapi.io/employeeInfo
+  <br>
   <h4>Used Tools.</h4>
 <ul>
   <li>Html</li>
