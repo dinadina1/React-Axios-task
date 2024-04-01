@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light sticky-top product-border border-1">
@@ -19,9 +20,6 @@ const Navbar = () => {
                 <Link to={"/adduser"} className='text-decoration-none ps-4 text-dark'>Add User</Link>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            </form>
           </div>
         </div>
       </nav>

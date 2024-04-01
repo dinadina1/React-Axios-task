@@ -36,7 +36,6 @@ export const UserContext = ({ children }) => {
             try {
                 const getApi = await axios.get(APIURL)
                 setUserInfo(getApi.data)
-                setIsLoading(!loading)
             } catch (err) {
                 console.log(err.stack);
             }
